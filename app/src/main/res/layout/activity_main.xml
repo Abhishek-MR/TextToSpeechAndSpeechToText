@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context="com.example.abhi.texttospeechandspeechtotext.MainActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="Homie"
+        app:titleMarginStart="30dp"
+        >
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar"
+        android:weightSum="2">
+
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:id="@+id/txtSpeechInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorTextBlack"
+                android:text="Hello user,\nwhat can I do for you?"
+                android:gravity="center"
+                android:layout_centerInParent="true"
+                android:textSize="26dp"
+                android:textStyle="bold"
+                android:layout_margin="10dp"
+                />
+
+        </RelativeLayout>
+
+
+
+
+
+
+
+            <com.skyfishjy.library.RippleBackground
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/animation_list"
+                android:id="@+id/content"
+                app:rb_color="@color/colorWhite"
+                app:rb_radius="25dp"
+                app:rb_rippleAmount="10"
+                app:rb_duration="3000"
+                app:rb_scale="6">
+
+
+                <LinearLayout
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/circle_stroke"
+                    >
+
+
+                    <ImageButton
+                        android:layout_margin="15dp"
+                        android:id="@+id/btnSpeak"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:src="@drawable/ic_mic" />
+
+                </LinearLayout>
+            </com.skyfishjy.library.RippleBackground>
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+</RelativeLayout>
